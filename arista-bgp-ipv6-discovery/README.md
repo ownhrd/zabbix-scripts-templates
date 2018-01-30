@@ -1,1 +1,9 @@
-Use "External script" in Zabbix: arista.bgp.discovery[{HOST.CONN},{$SNMP_V3_AUTH_USER},{$SNMP_V3_AUTH_PASSWORD},{$SNMP_V3_SECURITY_PASSWORD},1.3.6.1.4.1.30065.4.1.1.2.1.3.1.2,1.3.6.1.4.1.30065.4.1.1.2.1.14.1.2]
+## This script use zabbix low level discovery Arista BGP IPv6 Sessions.
+
+### How to use (Zabbix 3.4+):
+
+* Put `arista.bgp.discovery` in to `/usr/lib/zabbix/externalscripts/`
+* `chmod +x /usr/lib/zabbix/externalscripts/arista.bgp.discovery`
+* Import `Template_SNMP_v3_ARISTA_BGP_IPv6_Session.xml` in to Zabbix
+* Change macro in template about arista device snmpv3 credentials
+* Add hosts in to template
