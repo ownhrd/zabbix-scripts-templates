@@ -1,0 +1,1 @@
+Use "External script" in Zabbix: arista.bgp.discovery[{HOST.CONN},{$SNMP_V3_AUTH_USER},{$SNMP_V3_AUTH_PASSWORD},{$SNMP_V3_SECURITY_PASSWORD},1.3.6.1.4.1.30065.4.1.1.2.1.3.1.2,1.3.6.1.4.1.30065.4.1.1.2.1.14.1.2]
