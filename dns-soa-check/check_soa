@@ -1,0 +1,9 @@
+#!/bin/sh
+# Igor Sidorenko
+
+result=$(/usr/bin/dig "$(echo $1 | cut -d'/' -f1 )" SOA +noall +answer +short @127.0.0.1)
+if [[ $result ]] ; then
+    echo "0"
+else
+    echo "1"
+fi
